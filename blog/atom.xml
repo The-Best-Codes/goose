@@ -84,7 +84,7 @@
 </li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="guide">Guide<a href="https://block.github.io/goose/blog/2025/06/19/isolated-development-environments#guide" class="hash-link" aria-label="Direct link to Guide" title="Direct link to Guide">​</a></h2>
-<p><strong><a href="https://block.github.io/goose/docs/guides/isolated-development-environments">Get started with the full guide →</a></strong></p>
+<p><strong><a href="https://block.github.io/goose/docs/tutorials/isolated-development-environments">Get started with the full guide →</a></strong></p>
 <hr>
 <p><em>Questions? Join our <a href="https://github.com/block/goose" target="_blank" rel="noopener noreferrer">GitHub discussions</a> or <a href="https://discord.gg/block-opensource" target="_blank" rel="noopener noreferrer">Discord</a>. Learn more about Dagger at <a href="https://dagger.io/" target="_blank" rel="noopener noreferrer">dagger.io</a>.</em></p>
 <!-- -->
@@ -420,7 +420,7 @@
 <p>Because I don't do this often, I often end up searching for the commands, which derails what I was initially working on.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="using-goose-as-my-port-manager">Using Goose as My Port Manager<a href="https://block.github.io/goose/blog/2025/05/22/manage-local-host-conflicts-with-goose#using-goose-as-my-port-manager" class="hash-link" aria-label="Direct link to Using Goose as My Port Manager" title="Direct link to Using Goose as My Port Manager">​</a></h2>
 <p>To avoid that interruption, I started offloading the task to <a href="https://block.github.io/goose/">Goose</a>, an open source AI agent.</p>
-<p>Goose uses its built-in <a href="https://block.github.io/goose/docs/tutorials/developer-mcp">Developer</a> MCP server to handle coding-related tasks on my machine. Here's what the interaction looks like:</p>
+<p>Goose uses its built-in <a href="https://block.github.io/goose/docs/mcp/developer-mcp">Developer</a> MCP server to handle coding-related tasks on my machine. Here's what the interaction looks like:</p>
 <p><strong>Prompt to Goose:</strong></p>
 <div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Can you tell me which ports I have running?</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p><strong>Goose Response:</strong></p>
@@ -473,7 +473,7 @@
 <p>This starts up a local web server (the command line output will tell you which port to access in your browser, ie, loalhost:6274), where you can "connect" to the server, and request a list of tools, resources, prompts, from the MCP server. In this case, I see a list of tools available such as "mbotBeep" or "mbotExplore".</p>
 <p><img decoding="async" loading="lazy" alt="mcp tool list" src="https://block.github.io/goose/assets/images/mcp-tool-list-6ca350d7f5679d32dbc1c8337b55f2e4.png" width="1032" height="1300" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="goose-learns-how-to-drive">Goose learns how to drive!<a href="https://block.github.io/goose/blog/2025/05/20/goose-gets-a-drivers-license#goose-learns-how-to-drive" class="hash-link" aria-label="Direct link to Goose learns how to drive!" title="Direct link to Goose learns how to drive!">​</a></h2>
-<p>Following our <a href="https://block.github.io/goose/docs/tutorials/mbot-mcp/">mbot MCP tutorial</a> we can set up our MCP extension just like we ran our Java JAR file with the environment variables.</p>
+<p>Following our <a href="https://block.github.io/goose/docs/mcp/mbot-mcp/">mbot MCP tutorial</a> we can set up our MCP extension just like we ran our Java JAR file with the environment variables.</p>
 <p>Now we can give Goose commands like "drive in a square pattern by making left turns and moving forward, and beeping before you turn" and it will send the commands to the mbot2 rover via MQTT.</p>
 <p>I didn't want my mbot2 rover to gain too much territory, so I decided to make some modifications to limit how far it would go.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="modifications-i-made-to-the-python-code">Modifications I made to the Python code<a href="https://block.github.io/goose/blog/2025/05/20/goose-gets-a-drivers-license#modifications-i-made-to-the-python-code" class="hash-link" aria-label="Direct link to Modifications I made to the Python code" title="Direct link to Modifications I made to the Python code">​</a></h3>
@@ -556,7 +556,7 @@ This lets me either make typos or just type in what I want in the command line s
 <p>As teams adopt AI tools like Goose, the ability to define and share these automated workflows will become increasingly important.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-plays-standardizing-your-teams-workflows">AI Plays: Standardizing Your Team's Workflows<a href="https://block.github.io/goose/blog/2025/05/09/developers-ai-playbook-for-team-efficiency#ai-plays-standardizing-your-teams-workflows" class="hash-link" aria-label="Direct link to AI Plays: Standardizing Your Team's Workflows" title="Direct link to AI Plays: Standardizing Your Team's Workflows">​</a></h2>
 <p>Goose can help standardize and automate these tasks, by <a href="https://block.github.io/goose/docs/guides/session-recipes">creating recipes</a>. As a developer on your team uses Goose, they can create a recipe that describes how to perform a task, and then share that with the rest of the team. These recipes can be shared and reused, and improved over time, just like a sports team’s playbook.</p>
-<p>Recipes are built with an understanding of the workflow you want Goose to help with, and these may involve one or more MCP servers, such as <a href="https://block.github.io/goose/docs/tutorials/github-mcp/">GitHub</a> or <a href="https://block.github.io/goose/docs/tutorials/postgres-mcp/">PostgreSQL</a>. The recipes are designed to be reusable and adaptable, allowing developers to create a library that can be used across different projects.</p>
+<p>Recipes are built with an understanding of the workflow you want Goose to help with, and these may involve one or more MCP servers, such as <a href="https://block.github.io/goose/docs/mcp/github-mcp/">GitHub</a> or <a href="https://block.github.io/goose/docs/mcp/postgres-mcp/">PostgreSQL</a>. The recipes are designed to be reusable and adaptable, allowing developers to create a library that can be used across different projects.</p>
 <p>A shared playbook of AI plays helps everyone on the team perform tasks consistently. It can also reduce the time spent on repetitive work.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="goose-recipes-the-building-blocks-of-your-playbook">Goose Recipes: The Building Blocks of Your Playbook<a href="https://block.github.io/goose/blog/2025/05/09/developers-ai-playbook-for-team-efficiency#goose-recipes-the-building-blocks-of-your-playbook" class="hash-link" aria-label="Direct link to Goose Recipes: The Building Blocks of Your Playbook" title="Direct link to Goose Recipes: The Building Blocks of Your Playbook">​</a></h2>
 <p>For a kitchen-related analogy as an overview, check out <a href="https://block.github.io/goose/blog/authors/rizel/">Rizel's</a> recent blog post, <a href="https://block.github.io/goose/blog/2025/05/06/recipe-for-success">A Recipe for Success</a>.</p>
@@ -917,7 +917,7 @@ The link below is a recipe that lets you choose your favorite platform (GitHub, 
 <p>Q: <strong>How will MCP help with APIs?</strong><br>
 A: Start with <a href="https://block.github.io/goose/blog/2025/02/17/agentic-ai-mcp/#mcp-ecosystem">this post by Angie Jones</a>. MCP provides context about your API, to give AI Agents more context and awareness of the capabilities of your API endpoints and responses. This can help the Agent understand the intent of the request, and dynamically invoke (or "call") to underlying API endpoint, handle data transformation, and return a response. No more manually writing the code, response validators, error handlers, and so on!</p>
 <p>Q: <strong>What are some initial steps I can take as a developer to explore AI agents and MCP?</strong><br>
-A: Start by researching the fundamental concepts, and use other existing MCP servers. We recommend starting with <a href="https://block.github.io/goose" target="_blank" rel="noopener noreferrer">Goose</a> to integrate an existing MCP server. We have a growing <a href="https://block.github.io/docs/category/tutorials/" target="_blank" rel="noopener noreferrer">listof tutorials</a> to help you find some technologies like GitHub, PostgreSQL, Google Maps, and more. Once you feel comfortable with using MCP, you can start building your own MCP server for your own APIs.</p>
+A: Start by researching the fundamental concepts, and use other existing MCP servers. We recommend starting with <a href="https://block.github.io/goose/">Goose</a> to integrate an existing MCP server. We have a growing <a href="https://block.github.io/goose/docs/category/mcp-servers">listof tutorials</a> to help you find some technologies like GitHub, PostgreSQL, Google Maps, and more. Once you feel comfortable with using MCP, you can start building your own MCP server for your own APIs.</p>
 <p>Q: <strong>What about AI and MCP security?</strong><br>
 A: AI agents can enhance security through better context awareness in interactions, but MCP is still relatively new, and requires <a href="https://block.github.io/goose/blog/2025/03/26/mcp-security/">careful security evaluations</a>. Your business and dev teams should thoroughly investigate MCP's capabilities to ensure you're building appropriate access control, and managing data privacy.</p>
 <p>Q: <strong>How long would a full migration typically take?</strong><br>
@@ -1033,7 +1033,7 @@ The introduction of <a href="https://modelcontextprotocol.io/" target="_blank" r
 <p>Sidenote: I met an AI enthusiast at a meetup who said he sometimes gets coding ideas while driving. He's exploring using his voice to vibe code on the go. Stay safe out there. Don't code and drive! 🚗⛑️</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-try-it">How to Try It<a href="https://block.github.io/goose/blog/2025/04/21/practical-use-cases-of-ai#how-to-try-it" class="hash-link" aria-label="Direct link to How to Try It" title="Direct link to How to Try It">​</a></h3>
 <ol>
-<li>Follow <a href="https://block.github.io/goose/docs/tutorials/speech-mcp">this tutorial</a></li>
+<li>Follow <a href="https://block.github.io/goose/docs/mcp/speech-mcp">this tutorial</a></li>
 <li>Enable the <a href="https://github.com/Kvadratni/speech-mcp" target="_blank" rel="noopener noreferrer"><code>Speech</code></a> and <a href="https://block.github.io/goose/extensions/detail?id=developer"><code>Developer</code></a> extensions</li>
 <li>Prompt Goose:<!-- -->
 <blockquote>
@@ -1049,7 +1049,7 @@ The introduction of <a href="https://modelcontextprotocol.io/" target="_blank" r
 <p>I want guests to feel like I actually know their work, even if I don't have hours to prep. This lets me ask smarter questions and run a better show.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-try-it-1">How to Try It<a href="https://block.github.io/goose/blog/2025/04/21/practical-use-cases-of-ai#how-to-try-it-1" class="hash-link" aria-label="Direct link to How to Try It" title="Direct link to How to Try It">​</a></h3>
 <ol>
-<li>Follow <a href="https://block.github.io/goose/docs/tutorials/youtube-transcript">this tutorial</a></li>
+<li>Follow <a href="https://block.github.io/goose/docs/mcp/youtube-transcript-mcp">this tutorial</a></li>
 <li>Enable the <a href="https://github.com/jkawamoto/mcp-youtube-transcript" target="_blank" rel="noopener noreferrer"><code>YouTube Transcript</code></a> and <a href="https://block.github.io/goose/extensions/detail?id=developer"><code>Developer</code></a> extensions</li>
 <li>Prompt Goose:<!-- -->
 <blockquote>
@@ -1080,7 +1080,7 @@ The introduction of <a href="https://modelcontextprotocol.io/" target="_blank" r
 <p>I'm not currently looking for a job, but I like to stay prepared. My strategy involves keeping my resume current and competitive. I do this by comparing my current resume to job listings, but I don't have to do this manually anymore. Instead, Goose can quickly point out my strengths and weaknesses for specific job listings. This approach could help hiring managers review resumes faster as well.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-try-it-3">How to Try It<a href="https://block.github.io/goose/blog/2025/04/21/practical-use-cases-of-ai#how-to-try-it-3" class="hash-link" aria-label="Direct link to How to Try It" title="Direct link to How to Try It">​</a></h3>
 <ol>
-<li>Follow <a href="https://block.github.io/goose/docs/tutorials/pdf-mcp">this tutorial</a></li>
+<li>Follow <a href="https://block.github.io/goose/docs/mcp/pdf-mcp">this tutorial</a></li>
 <li>Enable the <a href="https://github.com/michaelneale/mcp-read-pdf" target="_blank" rel="noopener noreferrer"><code>PDF Reader</code></a> extension</li>
 <li>Prompt Goose:<!-- -->
 <blockquote>
@@ -1120,7 +1120,7 @@ The introduction of <a href="https://modelcontextprotocol.io/" target="_blank" r
 <p>SQL can get complex with joins, stored procedures, and subqueries. Goose helps me move faster and avoid errors by handling the query logic for me.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-try-it-5">How to Try It<a href="https://block.github.io/goose/blog/2025/04/21/practical-use-cases-of-ai#how-to-try-it-5" class="hash-link" aria-label="Direct link to How to Try It" title="Direct link to How to Try It">​</a></h3>
 <ol>
-<li>Follow <a href="https://block.github.io/goose/docs/tutorials/postgres-mcp">this tutorial</a></li>
+<li>Follow <a href="https://block.github.io/goose/docs/mcp/postgres-mcp">this tutorial</a></li>
 <li>Enable the <a href="https://github.com/modelcontextprotocol/servers/tree/HEAD/src/postgres" target="_blank" rel="noopener noreferrer"><code>PostgreSQL</code></a> and <a href="https://block.github.io/goose/extensions/detail?id=developer"><code>Developer</code></a> extensions</li>
 <li>Prompt Goose:<!-- -->
 <blockquote>
@@ -1137,7 +1137,7 @@ The introduction of <a href="https://modelcontextprotocol.io/" target="_blank" r
 <p>I tend to overbook myself or get anxious that I won't get accepted, so I apply to everything. Then I end up getting accepted to all of them and say yes without thinking, which leads to poor planning and rushed talks. With Goose, I can analyze patterns in CFP timelines and make more intentional choices.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-try-it-6">How to Try It<a href="https://block.github.io/goose/blog/2025/04/21/practical-use-cases-of-ai#how-to-try-it-6" class="hash-link" aria-label="Direct link to How to Try It" title="Direct link to How to Try It">​</a></h3>
 <ol>
-<li>Follow <a href="https://block.github.io/goose/docs/tutorials/agentql-mcp">this tutorial</a></li>
+<li>Follow <a href="https://block.github.io/goose/docs/mcp/agentql-mcp">this tutorial</a></li>
 <li>Enable the <a href="https://github.com/tinyfish-io/agentql-mcp" target="_blank" rel="noopener noreferrer"><code>AgentQL</code></a> extension</li>
 <li>Prompt Goose:<!-- -->
 <blockquote>
@@ -1183,7 +1183,7 @@ Extract for developer conferences (attendance &gt; 500) occurring between 2022-2
 <p>In addition to generating code, AI agents can help you learn how to code. Goose includes a built-in tutorial extension designed to walk users through technical concepts in a hands-on way.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-try-it-8">How to Try It<a href="https://block.github.io/goose/blog/2025/04/21/practical-use-cases-of-ai#how-to-try-it-8" class="hash-link" aria-label="Direct link to How to Try It" title="Direct link to How to Try It">​</a></h3>
 <ol>
-<li>Follow <a href="https://block.github.io/goose/docs/tutorials/tutorial-extension">this tutorial</a></li>
+<li>Follow <a href="https://block.github.io/goose/docs/mcp/tutorial-mcp">this tutorial</a></li>
 <li>Prompt Goose:<!-- -->
 <blockquote>
 <p>I'd like to learn how to build an extension or MCP server for Goose</p>
@@ -1546,7 +1546,7 @@ The suitcase is already packed with tools, built-in and custom extensions (MCP s
 <li>"Avoid using eval or unsafe dynamic code."</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="7-integrate-goose-into-your-cicd">7. Integrate Goose into Your CI/CD<a href="https://block.github.io/goose/blog/2025/04/08/vibe-code-responsibly#7-integrate-goose-into-your-cicd" class="hash-link" aria-label="Direct link to 7. Integrate Goose into Your CI/CD" title="Direct link to 7. Integrate Goose into Your CI/CD">​</a></h3>
-<p>Before issues hit production, add <a href="https://block.github.io/goose/docs/tutorials/cicd" target="_blank" rel="noopener noreferrer">Goose to your CI/CD pipeline</a> to:</p>
+<p>Before issues hit production, add <a href="https://block.github.io/goose/docs/tutorials/cicd">Goose to your CI/CD pipeline</a> to:</p>
 <ul>
 <li>Automate code reviews</li>
 <li>Validate documentation</li>
@@ -1555,7 +1555,7 @@ The suitcase is already packed with tools, built-in and custom extensions (MCP s
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="8-use-an-allowlist-to-block-unsafe-mcp-servers">8. Use an Allowlist to Block Unsafe MCP Servers<a href="https://block.github.io/goose/blog/2025/04/08/vibe-code-responsibly#8-use-an-allowlist-to-block-unsafe-mcp-servers" class="hash-link" aria-label="Direct link to 8. Use an Allowlist to Block Unsafe MCP Servers" title="Direct link to 8. Use an Allowlist to Block Unsafe MCP Servers">​</a></h3>
 <p>Some MCP servers can introduce security risks, especially if compromised.</p>
 <p>Use the Goose <a href="https://github.com/block/goose/blob/main/crates/goose-server/ALLOWLIST.md" target="_blank" rel="noopener noreferrer">allowlist</a> feature to prevent Goose from calling unsafe or untrusted tools.</p>
-<p>Here's how the team at Block is thinking about <a href="https://block.github.io/goose/blog/2025/03/31/securing-mcp" target="_blank" rel="noopener noreferrer">securing the MCP</a>.</p>
+<p>Here's how the team at Block is thinking about <a href="https://block.github.io/goose/blog/2025/03/31/securing-mcp">securing the MCP</a>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="9-pick-a-high-performing-llm">9. Pick a High-Performing LLM<a href="https://block.github.io/goose/blog/2025/04/08/vibe-code-responsibly#9-pick-a-high-performing-llm" class="hash-link" aria-label="Direct link to 9. Pick a High-Performing LLM" title="Direct link to 9. Pick a High-Performing LLM">​</a></h3>
 <p>Not all LLMs are built the same. Goose plays best with:</p>
 <ul>
